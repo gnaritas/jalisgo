@@ -1,0 +1,143 @@
+/* JalisGo — custom design v2 (griddle charcoal + clay + maize on cream; serif display) — unique to this build */
+:root{
+  --char:#1d1a17; --char2:#2c2621; --clay:#b4441e; --clay2:#8f3313;
+  --cream:#faf3e3; --paper:#fffdf7; --maize:#e8b34c; --maize2:#c99024;
+  --green:#3a6048; --ink:#241c14; --soft:#6f6353; --line:#e6d9bd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.12;letter-spacing:.01em}
+a{color:var(--clay2)}
+.skip{position:absolute;left:-60vw;top:0;background:var(--char);color:#fff;padding:.6rem 1rem;border-radius:0 0 .5rem 0;z-index:9}
+.skip:focus{left:0}
+.banner{background:var(--green);color:#f2efe4;text-align:center;font-size:.83rem;padding:.4rem .8rem}
+.banner a{color:var(--maize)}
+
+/* header */
+.site-head{background:var(--paper);border-bottom:3px solid var(--clay);position:sticky;top:0;z-index:8}
+.head-in{max-width:1120px;margin:0 auto;padding:.6rem 1rem;display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+.brand{font:700 1.7rem/1 Georgia,serif;color:var(--char);text-decoration:none;letter-spacing:.01em}
+.brand span{color:var(--clay)}
+.site-head nav{display:flex;gap:.15rem;flex-wrap:wrap;flex:1}
+.site-head nav a{color:var(--ink);text-decoration:none;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;padding:.45rem .55rem;border-radius:.35rem}
+.site-head nav a:hover{background:var(--cream)}
+.cta-top{background:var(--clay);color:#fff;text-decoration:none;font-weight:700;font-size:.88rem;padding:.5rem 1rem;border-radius:999px;white-space:nowrap}
+.cta-top:hover{background:var(--clay2)}
+
+/* hero */
+.hero{background:
+  radial-gradient(1400px 520px at 78% -12%, #3a2f22 0%, transparent 60%),
+  repeating-linear-gradient(115deg, #201c17 0 26px, #241f19 26px 52px);
+  color:#f7efdd}
+.hero-in{max-width:1120px;margin:0 auto;padding:4.4rem 1.2rem 3.9rem}
+.kicker{text-transform:uppercase;letter-spacing:.22em;font-size:.78rem;color:var(--maize);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.4rem);max-width:21ch}
+.hero .tag{margin-top:1rem;font-size:clamp(1rem,2.4vw,1.22rem);max-width:56ch;color:#e9dece}
+.cta-row{margin-top:1.7rem;display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:.8rem 1.5rem;font-size:1rem;border:2px solid transparent}
+.btn.gold{background:var(--maize);color:#241c14}
+.btn.gold:hover{background:#f2c463}
+.btn.clay{background:var(--clay);color:#fff}
+.btn.clay:hover{background:var(--clay2)}
+.btn.ghost{border-color:#8d7a60;color:#f7efdd}
+.btn.ghost:hover{border-color:var(--maize);color:var(--maize)}
+.btn.outline{border-color:var(--char);color:var(--char);background:transparent}
+.btn.outline:hover{background:var(--char);color:var(--cream)}
+
+/* body layout */
+main{max-width:1120px;margin:0 auto;padding:0 1.2rem}
+h2{font-size:1.75rem;color:var(--char);margin:2.6rem 0 1rem;border-bottom:3px dotted var(--clay);padding-bottom:.45rem}
+.fine{font-size:.82rem;color:var(--soft);margin-top:.6rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.9rem;margin:-2.1rem auto;position:relative;z-index:2}
+.step{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--clay);border-radius:.7rem;padding:1.1rem 1.2rem;box-shadow:0 8px 22px rgba(29,26,23,.13)}
+.step .num{display:block;font:700 2.2rem/1 Georgia,serif;color:var(--maize2)}
+.step strong{display:block;margin:.35rem 0 .2rem}
+
+/* cards */
+.svc .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.9rem}
+.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:.7rem;padding:1.15rem 1.2rem;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--clay);transform:translateY(-2px)}
+.card h3{color:var(--clay2);font-size:1.18rem;margin-bottom:.35rem}
+.card p{font-size:.95rem;color:#4c4437}
+.more{display:inline-block;margin-top:.7rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:700}
+
+/* hours + address */
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;align-items:start}
+table.hours{border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:.7rem;overflow:hidden;width:100%}
+.hours th,.hours td{padding:.55rem 1rem;text-align:left;border-bottom:1px solid var(--line)}
+.hours th{background:var(--char);color:var(--cream);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.hours tr:last-child td{border-bottom:none}
+.addr{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--maize2);border-radius:.5rem;padding:1rem 1.15rem;margin-bottom:.9rem;line-height:1.6}
+
+/* map */
+.map-band{margin-bottom:1rem}
+.map-frame{border:3px solid var(--clay);border-radius:.8rem;overflow:hidden;background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:340px;border:0}
+
+/* CTA band */
+.cta-band{background:var(--char);color:#f4ecdb;border-radius:1rem;padding:2.2rem 1.6rem;margin:2.6rem 0;text-align:center}
+.cta-band h2{color:var(--maize);border:none;padding:0;margin:0 0 .4rem}
+.cta-band p{max-width:52ch;margin:0 auto}
+.cta-band .cta-row{justify-content:center}
+.cta-band .btn.outline{border-color:#8d7a60;color:#f4ecdb}
+.cta-band .btn.outline:hover{background:#f4ecdb;color:var(--char)}
+
+/* claim note */
+.claim{background:#f4ead3;border:1px dashed var(--maize2);border-radius:1rem;padding:1.6rem 1.5rem;margin-bottom:2rem}
+.claim h2{margin-top:0;border:none;padding:0}
+.claim p{max-width:72ch}
+
+/* breadcrumbs */
+.crumb{font-size:.8rem;color:var(--soft);margin-top:1.4rem;text-transform:uppercase;letter-spacing:.08em}
+.crumb a{color:var(--green)}
+
+/* detail hero (service pages) */
+.dhero{background:
+  radial-gradient(900px 380px at 20% -10%, #3a2f22 0%, transparent 62%),
+  linear-gradient(160deg, var(--char2), #17130f);
+  color:#f7efdd;border-radius:0 0 1.2rem 1.2rem;margin:0 -1.2rem;padding:2.8rem 1.4rem 2.4rem}
+.dhero .kicker{color:var(--maize)}
+.dhero h1{font-size:clamp(1.9rem,4.6vw,3rem);max-width:24ch}
+.dhero p{max-width:62ch;color:#e4dac9;margin-top:.7rem}
+
+/* menu page */
+.menu-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.1rem}
+.msec{background:var(--paper);border:1px solid var(--line);border-radius:.7rem;padding:1.1rem 1.25rem}
+.msec h3{color:var(--clay2);font-size:1.2rem;border-bottom:2px dotted var(--maize2);padding-bottom:.3rem;margin-bottom:.5rem}
+.msec p{font-size:.95rem}
+.mnote{background:#f4ead3;border:1px dashed var(--maize2);border-radius:.7rem;padding:.9rem 1.1rem;margin:1.1rem 0;font-size:.92rem}
+
+/* FAQ */
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:.6rem;padding:.85rem 1.1rem;margin-bottom:.7rem}
+.faq summary{font-weight:700;cursor:pointer;color:var(--char)}
+.faq details p{margin-top:.5rem}
+
+/* plain list (privacy) */
+.pl{margin:.8rem 0 .4rem 1.2rem;display:grid;gap:.65rem}
+.pl li{max-width:78ch}
+
+/* contact form */
+.cform{display:flex;flex-direction:column;gap:.45rem;background:var(--paper);border:1px solid var(--line);border-radius:.8rem;padding:1.2rem}
+.cform label{font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;color:var(--soft);margin-top:.45rem}
+.cform input,.cform textarea{font:inherit;padding:.65rem .8rem;border:1px solid var(--line);border-radius:.45rem;background:var(--cream);color:var(--ink);width:100%}
+.cform input:focus,.cform textarea:focus{outline:2px solid var(--clay);border-color:var(--clay)}
+.cform button{margin-top:.8rem;border:0;cursor:pointer;font-size:1.02rem}
+.cform .fine{margin-top:.7rem}
+
+/* footer */
+.site-foot{background:var(--char);color:#d8cdb8;margin-top:2rem;padding:2rem 1.2rem;text-align:center}
+.nap-name{font:700 1.5rem/1.2 Georgia,serif;color:var(--maize);letter-spacing:.03em}
+.nap div{margin:.3rem auto;max-width:46ch}
+.nap a{color:var(--maize)}
+.studio{margin-top:1.2rem;font-size:.8rem;color:#9b8f79}
+.studio a{color:#c9b892}
+
+@media (max-width:640px){
+  .head-in{gap:.5rem}
+  .site-head nav{order:3;flex:1 0 100%;justify-content:flex-start}
+  .cta-top{margin-left:auto}
+  .steps{margin-top:1.1rem}
+}
