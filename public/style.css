@@ -132,8 +132,8 @@ table.hours{border-collapse:collapse;background:var(--paper);border:1px solid va
 .nap-name{font:700 1.5rem/1.2 Georgia,serif;color:var(--maize);letter-spacing:.03em}
 .nap div{margin:.3rem auto;max-width:46ch}
 .nap a{color:var(--maize)}
-.studio{margin-top:1.2rem;font-size:.8rem;color:#9b8f79}
-.studio a{color:#c9b892}
+.footline{margin-top:1.2rem;font-size:.8rem;color:#9b8f79}
+.footline a{color:#c9b892}
 
 @media (max-width:640px){
   .head-in{gap:.5rem}
