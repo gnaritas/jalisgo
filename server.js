@@ -84,7 +84,7 @@ http.createServer((req, res) => {
         .catch((err) => {
           console.log("MAILERR " + SITE + " " + err.message);
           res.writeHead(502, { "content-type": "text/html; charset=utf-8" });
-          res.end("<h1>Couldn't send just now</h1><p>Your message is logged. Email the studio directly: <a href=\"mailto:jarvis+websites@onsmalltalk.com\">jarvis+websites@onsmalltalk.com</a></p>");
+          res.end("<h1>Couldn't send just now</h1><p>Your message is logged — please try again in a moment.</p>");
         });
     });
   }
